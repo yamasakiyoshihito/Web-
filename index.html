@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>水族館</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <mata name="viewport" content="width=device-width,initial-scale=1.0"></mata>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" クロスオリジン>
+    <link
+        href="https: //fonts.googleapis.com/css2? family= IM+Fell+Great+Primer+SC & family= Noto+Sans+JP & family= Noto+Sans+Thai &family=能登+セリフ& display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+</head>
+<header class="header">
+
+    <h3>OCEANPARK</h3>
+
+    <ul>
+        <li>施設案内</li>
+        <li>ピックアップ情報</li>
+        <li>海の生き物</li>
+        <li>お問い合わせ</li>
+    </ul>
+
+</header>
+
+<body>
+    <div class="main_visual">
+        <div class="slider">
+            <img src="./img/枠 (5).png" alt="">
+            <img src="./img/枠 (6).png" alt="">
+            <img src="./img/枠 (8).png" alt="">
+        </div>
+        <h1 class="topright">まだ見たこと<br>
+            ない世界</h1>
+    </div>
+
+    <script>
+        $(function () {
+            $('.slider').slick({
+                fade: true,
+                autoplay: true,
+                infinite: true,
+                speed: 3000,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                arrows: false,
+            });
+        });
+    </script>
+    <h2 class="title_floorguide">FLOOR GUIDE</h2>
+
+    <p class="subtitle">施設案内</p>
+
+    <main>
+        <div class="guide">
+            <div class="box"><img src="img\unsplash_vhSz50AaFAs (2).png">
+                <p>楽園</p>
+                <p>正面の巨大アクリルバンはどの方向から閲覧できるようになっています。ここでしか見ることのできないジンベエザメたちの群泳をお楽しみください。 </p>
+            </div>
+            <div class="box"><img src="img\unsplash_awYEQyYdHVE (3).png ">
+                <p>七色海底</p>
+                <p>サンゴや魚を大規模飼育を可能にしました。約80種440群体の造礁サンゴや魚が圧巻です。</p>
+            </div>
+            <div class="box"><img src="img\TOP画像3 (4).png">
+                <p>アクアスペース</p>
+                <p>アカシュモクザメ（ハンマーヘッドシャーク）が優雅に泳いでいる姿を下から見られる水槽です。シュノーケリングやダイビングで海に潜っているような気分になれます。</p>
+            </div>
+            <div class="box"><img src="img\TOP画像4 (6).png">
+                <p>海中トンネル</p>
+                <p>飛べない鳥ペンギンが気持ちよさそうに青空の下を飛び、目の前に広がる巨大な水槽にはカラフルな魚、壁一面を浮遊する幻想的なクラゲたち。</p>
+            </div>
+        </div>
+    </main>
+    <h2 class="title_pickUp">PICK UP</h2>
+    <p class="subtitle">ピックアップ情報</p>
+    <div class="pic_text_pickUp">
+        <div class="left">
+
+            <div class="box"><img src="img\TOP画像 (2).png" alt=""></div>
+        </div>
+        <div class="right">
+            <p>アシカにおやつをあげよう</p>
+            <p>アシカの大好きンアおやつをあげてみよう！ アシカのしぐさや鳴き声を間近で体感できる アトラクション</p>
+        </div>
+    </div>
+    <h2 class="title_seaCreature">SEA ​​CREATURE</h2>
+    <p class="subtitle">海の生き物</p>
+    <div class="sea">
+        <div class="img"><img src="img\TOP画像1.png" alt=""></div>
+        <div class="img"><img src="img\TOP画像2.png" alt=""></div>
+        <div class="img"><img src="img\TOP画像3 (1).png" alt=""></div>
+        <div class="img"><img src="img\TOP画像4 (4).png" alt=""></div>
+        <div class="img"><img src="img\TOP画像4 (5).png" alt=""></div>
+        <div class="img"><img src="img\Rectangle 1.png" alt=""></div>
+    </div>
+    <script>
+        $(function () {
+            $('.sea').slick({
+                autoplay: true,
+                autoplaySpeeD: 1,
+                speed: 500,
+                arrows: false,
+                swipe: false,
+                swipe: false,
+                slidesToShow: 6,
+                cssEase: 'linear',
+                pauseOnFocus: false,
+                pauseOnHover: false,
+            });
+        });
+
+    </script>
+    <div class="contact">
+        <h2 class="title_contact">CONTACT</h2>
+        <p class="subtitle contact__subtitle">お問い合わせ</p>
+        <form class="content">
+            <div class="contentName">
+                <label class="contentName__label">氏名</label>
+                <input class="contactName_field" type="text" placeholder="">
+            </div>
+            <div class="contentName">
+                <label class="contentName__label">電話番号</label>
+                <input class="contactName_field" type="text" placeholder="">
+            </div>
+            <div class="contentName">
+                <label class="contentName__label">メール</label>
+                <input class="contactName_field" type="text" placeholder="">
+            </div>
+            <div class="contentName">
+                <label class="contentName__label">内容</label>
+                <textarea class="contactName_field contactName_field--large" placeholder=""></textarea>
+            </div>
+            <div>
+                <input class="contactBtn" type="submit" value="送信">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    ©2022 manabiya-sakur
+</footer>
+
+</html>
